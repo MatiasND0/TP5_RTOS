@@ -1,0 +1,54 @@
+[1/5] cd /home/matiasnd/esp-workspace/Esp32_rtos/build/esp-idf/esptool_py && /home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/matiasnd/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/matiasnd/esp-workspace/Esp32_rtos/build/partition_table/partition-table.bin /home/matiasnd/esp-workspace/Esp32_rtos/build/app-template.bin
+app-template.bin binary size 0x30550 bytes. Smallest app partition is 0x100000 bytes. 0xcfab0 bytes (81%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/matiasnd/esp-workspace/Esp32_rtos/build/bootloader/esp-idf/esptool_py && /home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/matiasnd/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/matiasnd/esp-workspace/Esp32_rtos/build/bootloader/bootloader.bin
+Bootloader binary size 0x6900 bytes. 0x700 bytes (6%) free.
+[2/3] cd /home/matiasnd/esp/esp-idf/components/esptool_py && /home/matiasnd/.espressif/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/matiasnd/esp/esp-idf -D "SERIAL_TOOL=/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/matiasnd/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/matiasnd/esp-workspace/Esp32_rtos/build -P /home/matiasnd/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 app-template.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev2
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WDQ6-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: d4:d4:da:5e:2e:34
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00040fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26880 bytes to 16869...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000769d... (100 %)
+Wrote 26880 bytes (16869 compressed) at 0x00001000 in 0.9 seconds (effective 240.2 kbit/s)...
+Hash of data verified.
+Compressed 197968 bytes to 109427...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001cf8d... (28 %)
+Traceback (most recent call last):
+  File "/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 1101, in _main
+    main()
+  File "/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 889, in main
+    operation_func(esp, args)
+  File "/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages/esptool/cmds.py", line 596, in write_flash
+    esp.flash_defl_block(block, seq, timeout=timeout)
+  File "/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 131, in inner
+    return func(*args, **kwargs)
+  File "/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 1040, in flash_defl_block
+    self.check_command(
+  File "/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 439, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+  File "/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 408, in command
+    p = self.read()
+  File "/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 341, in read
+    return next(self._slip_reader)
+StopIteration
+
+A fatal error occurred: The chip stopped responding.
+FAILED: CMakeFiles/flash /home/matiasnd/esp-workspace/Esp32_rtos/build/CMakeFiles/flash 
+cd /home/matiasnd/esp/esp-idf/components/esptool_py && /home/matiasnd/.espressif/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/matiasnd/esp/esp-idf -D "SERIAL_TOOL=/home/matiasnd/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/matiasnd/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/matiasnd/esp-workspace/Esp32_rtos/build -P /home/matiasnd/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

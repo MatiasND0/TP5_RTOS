@@ -1,0 +1,85 @@
+[0;33m--- esp-idf-monitor 1.3.1 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c522: strcat in ROM
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4000c51f: strcat in ROM
+[0m
+[0;33m0x400d52eb: app_main at /home/matiasnd/esp-workspace/Esp32_rtos/main/main.c:94 (discriminator 3)
+[0m
+[0;33m0x400e8ad5: main_task at /home/matiasnd/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087485: vPortTaskWrapper at /home/matiasnd/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c522: strcat in ROM
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4000c51f: strcat in ROM
+[0m
+[0;33m0x400d52eb: app_main at /home/matiasnd/esp-workspace/Esp32_rtos/main/main.c:94 (discriminator 3)
+[0m
+[0;33m0x400e8ad5: main_task at /home/matiasnd/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087485: vPortTaskWrapper at /home/matiasnd/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c522: strcat in ROM
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4000c51f: strcat in ROM
+[0m
+[0;33m0x400d52eb: app_main at /home/matiasnd/esp-workspace/Esp32_rtos/main/main.c:94 (discriminator 3)
+[0m
+[0;33m0x400e8ad5: main_task at /home/matiasnd/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087485: vPortTaskWrapper at /home/matiasnd/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c522: strcat in ROM
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4000c51f: strcat in ROM
+[0m
+[0;33m0x400d52eb: app_main at /home/matiasnd/esp-workspace/Esp32_rtos/main/main.c:94 (discriminator 3)
+[0m
+[0;33m0x400e8ad5: main_task at /home/matiasnd/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087485: vPortTaskWrapper at /home/matiasnd/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c522: strcat in ROM
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4000c51f: strcat in ROM
+[0m
+[0;33m0x400d52eb: app_main at /home/matiasnd/esp-workspace/Esp32_rtos/main/main.c:94 (discriminator 3)
+[0m
+[0;33m0x400e8ad5: main_task at /home/matiasnd/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087485: vPortTaskWrapper at /home/matiasnd/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
